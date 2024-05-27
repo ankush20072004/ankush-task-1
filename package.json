@@ -1,4 +1,4 @@
-{
+{"homepage" : "https://ankush20072004.github.io/ankush-task-1",
   "name": "react",
   "version": "1.0.0",
   "description": "",
@@ -7,17 +7,20 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.0",
-    "react-router-dom": "6.23.1"
+    "react-router-dom": "6.23.1",
+    "react-scripts": "^5.0.0"
   },
   "devDependencies": {
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.15",
+    "gh-pages": "^6.1.1",
     "loader-utils": "3.2.1",
     "typescript": "4.4.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
